@@ -7,5 +7,9 @@ section .weitere-links
 
 section div
 {
-    width: 600px;
+    width: 45vw;
+
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
 }

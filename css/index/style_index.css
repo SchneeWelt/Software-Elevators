@@ -1,0 +1,33 @@
+/** Diese CSS Datei gibt formatierungsregeln für die Verwendung der 
+Website auf einem Mobilen Gerät vor. */
+
+
+@import url('../variablen.css');
+
+section .mobile_links
+{
+    margin-top: 4vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 4vh;
+}
+
+.mobile_links a
+{
+    color: var(--textFarbeLink);
+
+    text-decoration: underline;
+
+    cursor: pointer;
+
+    font-weight: normal;
+}
+
+/* Der Hover Effekt funktioniert nicht auf Touch Displays... */
+.mobile_links a:hover
+{
+    text-decoration: underline;
+}

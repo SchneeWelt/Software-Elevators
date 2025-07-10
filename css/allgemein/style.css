@@ -28,3 +28,14 @@ body
     margin: 0;
     padding: 0;
 }
+
+html, section, body
+{
+    /* Folgendes verhindert, dass auf dem Handy zu viel leerer Bereich ist.
+    Ich denke aber, dass das eine sehr unschöne lösung für dieses Problem ist
+    und gehe davon aus, dass diese Problem durch Änderungen an anderer Stelle
+    gelöst werden kann. */
+
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+}

@@ -1,16 +1,20 @@
-@import url('./variablen.css');
+@import url('../variablen.css');
 
 footer 
 {
-    --paddingTop: 3.5vh;
-    --paddingBottom: 3.5vh;
+    --footerHeight: 3.5vh;
+    --paddingTop: 2.5vh;
+    --paddingBottom: 2.5vh;
+
     --paddingLeft: 2.5vw;
     --paddingRight: 2.5vw;
 
+    height: var(--footerHeight);
     width: calc(100vw - (2*var(--borderOffset) + var(--paddingLeft) + var(--paddingRight)));
 
     padding-right: var(--paddingRight);
     padding-left: var(--paddingLeft);
+
 
     padding-top: var(--paddingTop);
     padding-bottom: var(--paddingBottom);

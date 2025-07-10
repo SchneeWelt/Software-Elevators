@@ -2,8 +2,13 @@
 
 :root
 {
-    --navBarHeight: 14vh;
+    --navBarHeight: 12vh;
 }
+
+/* Die Nav Bar sollte, wie Section und Footer auch ein Padding zu den Seiten haben.
+So könnten alle die abstände von den beiden li elementen gelöscht werden, da durch
+das Padding ein automatischer abstand entsteht, der auch besser zu steuern ist.
+Kann ja bei zeiten nochmal gemacht werden. */
 
 nav
 {
@@ -42,9 +47,8 @@ ul
     align-items: center;
     justify-content: space-between;
 
-    /* Das Element etwas schmaler als die Nav Bar machen und so einen Abstand zu
-    den Rändern der Nav Bar erzeugen */
-    width: 94vw;
+    width: 100%;
+    height: 100%
 }
 
 /* Betrifft alle List Item Elemente allgemein */
@@ -61,6 +65,8 @@ ul .logo_bereich
     display: flex;
     align-items: center;
     flex-direction: row;
+
+    height: 80%;
 }
 
 /* Betrifft alle Liste Item Elemente mit der Klasse interne_links */
@@ -81,9 +87,9 @@ ul li a
     text-decoration: none;
 }
 
-li img
+ul .logo_bereich img
 {
-    height: calc(var(--navBarHeight) - 4vh);
+    height: calc(var(--navBarHeight) - 32%);
     width: auto;
 
     border-radius: var(--borderRadius);

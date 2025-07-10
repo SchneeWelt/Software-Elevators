@@ -30,8 +30,8 @@ und über die Import Anweisung von dieser Datei in einer anderen CSS Datei verwe
     Textfarbe für den Inhalt. */
     --textFarbeBody: #41424C;
 
-    --umrandungBorderNav: #dddfe4;
-    --umrandungBorderFooter: #dddfe4;
+    --umrandungBorderNav: #cdcccc;
+    --umrandungBorderFooter: #cdcccc;
 
 
     /* Wird überall im gesamten Code verwendet häufig, um Abstände zum äußeren
@@ -45,9 +45,14 @@ und über die Import Anweisung von dieser Datei in einer anderen CSS Datei verwe
 
     /* Eine Sammlung verschiender Textgrößen, die hiermit einheitlich für die gesamte 
     Website gestaltet sind.  */
-    --textGrößeÜberschriftH1: 36px;
+    /* --textGrößeÜberschriftH1: 36px;
     --textGrößeÜberchriftH2: 24px;
     --textGrößeFooter: 24px;
-    --textGrößeNav: 24px;
-    --textGröße: 18px;
+    --textGröße: 18px; */
+
+    --textGrößeÜberschriftH1: clamp(1.8rem, 4vw, 2.5rem);
+    --textGrößeÜberschriftH2: clamp(1.2rem, 3vw, 2rem);
+    --textGrößeFooter: clamp(1rem, 2vw, 1.5rem);
+    --textGrößeNav: clamp(1rem, 2vw, 1.5rem);
+    --textGröße: clamp(0.9rem, 2vw, 1.25rem);
 }
