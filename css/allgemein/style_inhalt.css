@@ -1,0 +1,99 @@
+/**
+    Gibt allgemeine Regeln für den Inhalt der Website vor. Einzelne Unterseiten
+    erweitern diese Regeln gegebenenfalls durch eigene weitere CSS Dateien. 
+
+    Mit dem Inhalt der Website sind hier alle Elemente zwischen Nav Bar und Footer
+    gemeint. Dabei sind Nav Bar und Footer davon augeschlossen.   
+*/
+
+@import url('./variablen.css');
+
+
+section
+{
+    --sectionHeight: 74.5vh;
+    --paddingTop: 1.25vh;
+    --paddingBottom: 4vh;
+
+    /* Alle Elemente bekommen inerhalb einer Section einen Layout Manager.
+    Sollen komplexe Elemente erstellt werden, so sind div Elemente in das 
+    Section Element einzufügen und dann separate Layout Manager für diese 
+    Div Elemente zu erstellen. */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    background-color: var(--hintergrundFarbeInhalt);
+
+    font-size: var(--textGröße);
+
+    /* Die Höhe soll insgesamt die SectionHeight sein. Da muss dann aber noch das 
+    Top und das Bottom Padding mitberücksichtigt werden. Deshalb die Rechnung hier. */
+    min-height: calc(var(--sectionHeight) - (var(--paddingBottom) + var(--paddingTop)));
+
+    margin-top: var(--borderOffset);
+    margin-bottom: var(--borderOffset);
+
+    padding-top: var(--paddingTop);
+    padding-bottom: var(--paddingBottom);
+    
+    /* Nachfolgend die Einstellungen für die Breite des Section Elements. 
+    Das Padding definiert hierbei indirekt wann der Text am linken und rechten
+    Rand beginnt. Das Section Element ist nämlich gar nicht so groß wie der Bildschirm
+    selbst und auf das Padding kann kein Element Platziert werden. Deshalb ist durch
+    Ändern des Paddings das Ändern des Abstandes zum Rand möglich unter beibehalt der 
+    graphischen Gestaltung des Section elements. */
+    
+    width: 80vw;
+    padding-left: calc(10vw - var(--borderOffset));
+    padding-right: calc(10vw - var(--borderOffset));
+
+    border-radius: var(--borderRadius);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+section h1 
+{
+    /* Diese zwei Zeilen funktionieren leider nicht... */
+    float: left;
+    text-align: left !important;
+
+    color: var(--textFarbeInhalt);
+    font-size: var(--textGrößeÜberschriftH1);
+    font-weight: bold;
+
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+section h2
+{
+    text-align: normal;
+
+    color: var(--textFarbeInhalt);
+    font-size: var(--textGrößeÜberchriftH2);
+    font-weight: bold;
+
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+
+section p
+{   
+    line-height: 1.6;
+}
+
+/* Alle Links in einer Section einheitlich gestalten */
+section a
+{
+    color: var(--textFarbeLink);
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+section a:hover
+{
+    text-decoration: underline;
+}

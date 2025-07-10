@@ -1,0 +1,11 @@
+section .weitere-links
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+section div
+{
+    width: 600px;
+}

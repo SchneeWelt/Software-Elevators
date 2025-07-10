@@ -1,0 +1,97 @@
+@import url('./variablen.css');
+
+:root
+{
+    --navBarHeight: 14vh;
+}
+
+nav
+{
+    height: var(--navBarHeight);
+    width: calc(100vw - 2*var(--borderOffset));
+
+    /* Abstand von Nav Bar zur Oberen Kante des Fensters */
+    margin-top: var(--borderOffset);
+
+    /* Schriftstyle einstellen */
+    font-weight: bold;
+    font-size: var(--textGrößeNav);
+
+    /* Farbgestalltung einstellen */
+    background-color: var(--hintergrundFarbeNav);
+    color: var(--textFarbeNav);
+
+    /* Schatten unter Nav Bar platzieren, hebt Navbar visuell vom Boden ab */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+
+    /* UL Element mittig in der Nav Bar platzieren */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Gibt der Nav Bar eine Umrandung */
+    border: 1px solid var(--umrandungBorderNav);
+    border-radius: var(--borderRadius);
+}
+
+ul
+{
+   /* LI Elemente mittig und hintereinander in UL Element platzieren */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Das Element etwas schmaler als die Nav Bar machen und so einen Abstand zu
+    den Rändern der Nav Bar erzeugen */
+    width: 94vw;
+}
+
+/* Betrifft alle List Item Elemente allgemein */
+ul li
+{
+    list-style: none;
+}
+
+/* Betrifft alle List Item Elemente mit der Klasse logo */
+ul .logo_bereich
+{
+    gap: 2.125vw;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Betrifft alle Liste Item Elemente mit der Klasse interne_links */
+ul .link_bereich
+{
+    gap: 2.125vw;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    margin-right: 4vw;
+}
+
+ul li a
+{
+    color: var(--textFarbeNav);
+    text-decoration: none;
+}
+
+li img
+{
+    height: calc(var(--navBarHeight) - 4vh);
+    width: auto;
+
+    border-radius: var(--borderRadius);
+}
+
+/* Wenn die Maus über einem Objekt der css Klasse inderline liegt.
+ Dann soll der Text dazu unterstrichen sein. */
+ul li a:hover
+{
+    text-decoration: underline;
+}

@@ -1,0 +1,30 @@
+@import url('../variablen.css');
+
+
+
+section div
+{
+    width: 90%;
+
+    margin-top: 5vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: bold;
+
+    /* Die Einheit EM wird verwendet, wenn Abstände proportional zur aktuell
+    eingestellten Schriftgröße realisiert werden. 1 Em entspricht einmal der
+    Aktuellen Schriftgröße. Es wird die Schriftgröße genommen, die entweder
+    im aktuellen Element definiert ist oder die des Eltern Elements. 
+    2Em entspricht 2 mal der aktuellen schriftgröße. Das könnte beispielsweise
+    2 mal 16px also 32 px sein. */
+
+    /* Für die Breite und Höhe von Elementen werden auf dem ersten Kind die viewport
+    Variablen verwendet. Als vh und vw. Befindet sich nun ein Kind in diesem Kind, 
+    so werden Prozentwerte verwendet, welche sich dann auf die breite und höhe des
+    ersten Kinds beziehen. So ist sichergestellt, dass kinder von kindern die breite
+    und höhe ihres eltern elements (das erste Kind) nicht überschritet. */
+}

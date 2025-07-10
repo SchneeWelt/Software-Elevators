@@ -1,0 +1,57 @@
+@import url('./variablen.css');
+
+footer 
+{
+    --paddingTop: 3.5vh;
+    --paddingBottom: 3.5vh;
+    --paddingLeft: 2.5vw;
+    --paddingRight: 2.5vw;
+
+    width: calc(100vw - (2*var(--borderOffset) + var(--paddingLeft) + var(--paddingRight)));
+
+    padding-right: var(--paddingRight);
+    padding-left: var(--paddingLeft);
+
+    padding-top: var(--paddingTop);
+    padding-bottom: var(--paddingBottom);
+
+    /* Abstand zum Ende des Bildschirms definieren */
+    margin-bottom: var(--borderOffset);
+
+    /* Layout Manager einstellen */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;   
+
+    /* Textstyle */
+    font-weight: bold;
+    font-size: var(--textGrößeFooter);
+
+    /* Farbstyle */
+    background-color: var(--hintergrundFarbeFooter);
+    color: var(--textFarbeFooter);
+
+    /* Randstyle */
+    border: 1px solid var(--umrandungBorderFooter);
+    border-radius: var(--borderRadius);
+
+    /* Footer vom Boden abheben */
+    box-shadow: 0px 2px 6px rgba(69, 78, 160, 0.2);
+}
+
+footer a
+{
+    text-decoration: none;
+
+    color: var(--textFarbeFooter);     
+
+    /* Der a-Tag überschreibt die festgelegte Textfarbe. 
+    Deshalb ist das neu Setzen der Textfarbe hier erforderlich. */
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+
