@@ -1,0 +1,8 @@
+section div
+{
+    width: 45vw;
+
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}

@@ -1,0 +1,41 @@
+@import url('../variablen.css');
+
+section div
+{
+    width: 80%;
+
+    margin-top: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    gap: 3vh;
+
+    font-weight: bold;
+
+    /* background-color: var(--hintergrundFarbeFooter); */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    border-radius: var(--borderRadius);
+
+    padding: 1em;
+
+    /* Die Einheit EM wird verwendet, wenn Abstände proportional zur aktuell
+    eingestellten Schriftgröße realisiert werden. 1 Em entspricht einmal der
+    Aktuellen Schriftgröße. Es wird die Schriftgröße genommen, die entweder
+    im aktuellen Element definiert ist oder die des Eltern Elements. 
+    2Em entspricht 2 mal der aktuellen schriftgröße. Das könnte beispielsweise
+    2 mal 16px also 32 px sein. */
+
+    /* Für die Breite und Höhe von Elementen werden auf dem ersten Kind die viewport
+    Variablen verwendet. Als vh und vw. Befindet sich nun ein Kind in diesem Kind, 
+    so werden Prozentwerte verwendet, welche sich dann auf die breite und höhe des
+    ersten Kinds beziehen. So ist sichergestellt, dass kinder von kindern die breite
+    und höhe ihres eltern elements (das erste Kind) nicht überschritet. 
+    Damit Prozent Werte funktionieren ist unbedingt darauf zu achten, dass jedes 
+    Kindelement eine Breite zugewiesen bekommt. Bei mehreren Kindern untereinander
+    kann dann mehrmals prozent verwendet werden. Wird in dieser Reihe auch nur einmal
+    vergessen einem Kindelement eine Höhe oder eine Breite zuzuweisen, so funktioniert die 
+    weitere Verwendung von prozent in den kindelementen von diesem kind nicht mehr.*/
+}
