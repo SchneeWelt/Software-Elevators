@@ -6,7 +6,7 @@
     gemeint. Dabei sind Nav Bar und Footer davon augeschlossen.   
 */
 
-@import url('./variablen.css');
+@import url('../variablen.css');
 
 
 section
@@ -71,11 +71,19 @@ section h2
     text-align: normal;
 
     color: var(--textFarbeInhalt);
-    font-size: var(--textGrößeÜberchriftH2);
+    font-size: var(--textGrößeÜberschriftH2);
     font-weight: bold;
 
-    margin-top: 4%;
-    margin-bottom: 6%;
+    margin-top: 1.5em;            /* 2 Mal Fontsize von Parent, also Section */
+    margin-bottom: 0.80em;
+
+    /* a mal EM gilt immer relativ zum Parent. EM hat dann immer die Schriftgröße
+    des Parent Elements gespeichert. 2 mal EM, bei Schriftgröße von Parent mit 16 px
+    wäre also 32 
+    Anders hingegen REM. Rem gilt, egal wie tief man sich in der DOM Struktur befindet,
+    immer für das oberste Parent Element, also das ROOT Element. Es wird entsprechend
+    immer genau die Schriftgröße verwendet, die in diesem Root Element gespeichert 
+    ist. */
 }
 
 section p
