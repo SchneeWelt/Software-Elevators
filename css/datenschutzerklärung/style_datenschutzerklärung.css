@@ -2,3 +2,8 @@ section div
 {
     margin-top: 2%;
 }
+
+section div:last-of-type
+{
+    margin-bottom: 3.5%;
+}
