@@ -9,7 +9,7 @@ footer
     --paddingLeft: 2.5vw;
     --paddingRight: 2.5vw;
 
-    height: var(--footerHeight);
+    min-height: var(--footerHeight);
     width: calc(100vw - (2*var(--borderOffset) + var(--paddingLeft) + var(--paddingRight)));
 
     padding-right: var(--paddingRight);
