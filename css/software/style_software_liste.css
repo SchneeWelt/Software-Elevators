@@ -39,3 +39,8 @@ section div
     vergessen einem Kindelement eine Höhe oder eine Breite zuzuweisen, so funktioniert die 
     weitere Verwendung von prozent in den kindelementen von diesem kind nicht mehr.*/
 }
+
+section div img
+{
+    border-radius: 10px;
+}
