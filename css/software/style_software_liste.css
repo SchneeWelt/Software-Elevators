@@ -5,7 +5,8 @@ section div
     width: 90%;
 
     margin-top: 5vh;
-
+    
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
