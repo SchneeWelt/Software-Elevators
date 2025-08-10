@@ -11,7 +11,8 @@ function resizeListWidth()
 
     divElements.forEach(div => 
         {
-            div.style.width = "18%";
+            div.style.width = "fit-content";
+            // div.style.width = "min(18%, min-content)";
         }
     );
 }
