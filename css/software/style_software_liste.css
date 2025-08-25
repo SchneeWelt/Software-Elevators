@@ -66,6 +66,15 @@ section .softwareListe .listItem .listItemContentContainer
     gap: 1em;
 }
 
+section .softwareListe .listItem .listItemContentContainer h3
+{
+    margin-bottom: 0.4em;
+
+    color: var(--textFarbeInhalt);
+    font-size: var(--textGrößeÜberschriftH3);
+}
+
+
 section .softwareListe .listItem img
 {
     border-radius: 10px;
