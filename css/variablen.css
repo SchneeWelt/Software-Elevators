@@ -7,7 +7,7 @@ und über die Import Anweisung von dieser Datei in einer anderen CSS Datei verwe
     /* Ich habe die Farbe eines Bleistiftes für die meisten Texte genommen. */
 
     /* Die Standart Textfarbe von einem Link innerhalb der Website */
-    --textFarbeLink: #686a83;
+    --textFarbeLink:#41424C /*#6c98d6 */;
 
     /* Farben für die Nav Bar */
     --hintergrundFarbeNav: #DCDCDC ;
