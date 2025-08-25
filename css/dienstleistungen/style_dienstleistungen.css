@@ -1,0 +1,17 @@
+
+section .angebote
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    gap: 2vh;
+
+    padding-bottom: 2vh;
+}
+
+section h3
+{
+    margin-top: 2em;
+    margin-bottom: 0.4em;
+}

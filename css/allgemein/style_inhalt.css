@@ -63,7 +63,7 @@ section h1
     font-weight: bold;
 
     margin-top: 5vh;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
 }
 
 section h2
@@ -75,7 +75,7 @@ section h2
     font-weight: bold;
 
     margin-top: 1.5em;            /* 2 Mal Fontsize von Parent, also Section */
-    margin-bottom: 0.80em;
+    margin-bottom: 1vh;
 
     /* a mal EM gilt immer relativ zum Parent. EM hat dann immer die Schriftgröße
     des Parent Elements gespeichert. 2 mal EM, bei Schriftgröße von Parent mit 16 px

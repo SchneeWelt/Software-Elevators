@@ -1,6 +1,6 @@
 @import url('../variablen.css');
 
-section div
+section .softwareListe
 {
     align-items: flex-start;
     display: flex;
@@ -8,18 +8,22 @@ section div
     justify-content: flex-start;
 
     gap: 5vw;
+
+    flex-wrap: wrap;
+
+    padding-bottom: 6vh;
 }
 
 
-section div div
+section .softwareListe .listItem
 {
-    width: 90%;
+    /* width: 90%; */
 
     margin-top: 5vh;
     
     align-items: flex-start;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
 
     gap: 3vh;
@@ -52,37 +56,33 @@ section div div
     weitere Verwendung von prozent in den kindelementen von diesem kind nicht mehr.*/
 }
 
-section div.image_container
+section .softwareListe .listItem .listItemContentContainer
 {
-    /* padding: 0px;
-    margin-top: 0px;
-
+    align-items: flex-start;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-
-    text-align: center; */
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    gap: 1em;
 }
 
-section div img
+section .softwareListe .listItem img
 {
     border-radius: 10px;
-
-    text-align: center;
-
-    /* Image soll in mitte, geht aber irgendwie nicht */
 }
 
+/* Mobilansicht: */
 @media (max-width: 768px) 
 {
-  section div 
-  {
-    flex-direction: column;
-  }
+    section .softwareListe 
+    {
+        flex-direction: column;
 
-  section div div
-  {
-    /* width: 100%; */
-  }
+        align-items: center;
+    }
+
+    section .softwareListe .listItem
+    {
+        flex-direction: column;
+    }
 }

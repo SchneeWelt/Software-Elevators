@@ -1,0 +1,9 @@
+section div
+{
+    margin-top: 0.5vh;
+}
+
+section div:last-of-type
+{
+    margin-bottom: 3.5%;
+}
