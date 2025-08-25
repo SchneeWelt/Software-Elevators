@@ -16,5 +16,8 @@ function rearangeFooterElements()
     const footer = document.querySelector("footer");
 
     footer.style.alignItems = "flex-start";
-    footer.style.flexDirection = "column";
+    footer.style.flexDirection = "row";
+    footer.style.justifyContent = "space-between";
+
+    footer.style.flexWrap = "wrap";
 }

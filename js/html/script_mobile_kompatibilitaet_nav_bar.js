@@ -21,10 +21,18 @@ function rearangeNavBarElements()
     {
         const mobileLinks = linkBereich.cloneNode(true);
 
-        let div = document.createElement("div");
-        div.classList.add("mobile_links");
-        div.innerHTML = mobileLinks.innerHTML;
+        let h2 = document.createElement("h2");
+        h2.innerHTML = "Links"
 
+        let linkContainer = document.createElement("div");
+        linkContainer.innerHTML = mobileLinks.innerHTML;
+        linkContainer.classList.add("links")
+
+        let div = document.createElement("div");
+        div.classList.add("linkBereich");
+
+        div.appendChild(h2);
+        div.appendChild(linkContainer);
 
         /* Die Kopierte Node aus der Nav Bar als Kind in die Section packen */ 
         mobileTarget.appendChild(div);
