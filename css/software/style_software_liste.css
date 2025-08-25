@@ -2,6 +2,17 @@
 
 section div
 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    gap: 5vw;
+}
+
+
+section div div
+{
     width: 90%;
 
     margin-top: 5vh;
@@ -61,4 +72,17 @@ section div img
     text-align: center;
 
     /* Image soll in mitte, geht aber irgendwie nicht */
+}
+
+@media (max-width: 768px) 
+{
+  section div 
+  {
+    flex-direction: column;
+  }
+
+  section div div
+  {
+    /* width: 100%; */
+  }
 }
