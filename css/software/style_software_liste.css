@@ -63,6 +63,8 @@ section .softwareListe .listItem .listItemContentContainer
     flex-direction: column;
     justify-content: flex-start;
     
+    font-size: var(--textGröße);
+
     gap: 1em;
 }
 
@@ -93,5 +95,11 @@ section .softwareListe .listItem img
     section .softwareListe .listItem
     {
         flex-direction: column;
+        align-items: center;
+
+        width: 90%;
+
+        padding-top: 3vh;
+        padding-bottom: 5vh;
     }
 }
