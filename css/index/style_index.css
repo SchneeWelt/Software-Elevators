@@ -1,8 +1,6 @@
 /** Diese CSS Datei gibt Formatierungsregeln für die Verwendung der 
 Website auf einem Mobilen Gerät vor. */
 
-
-
 @import url('../variablen.css');
 
 section .linkBereich .links
@@ -16,6 +14,13 @@ section .linkBereich .links
     padding-top: 1em;
 }
 
+/* Für die Mobile Ansicht die Pfeile vor die Links anzeigen */
+section .linkBereich .links a::before
+{
+    content: "▶";
+    margin-right: 8px;
+}
+
 section .linkBereich .links a
 {
     font-weight: bold;
@@ -24,7 +29,7 @@ section .linkBereich .links a
 }
 
 /* Der Hover Effekt funktioniert nicht auf Touch Displays... */
-.mobile_links a:hover
+.mobile_links a:hover       /* Ist diese Klasse nicht schon längst außer betrieb?
 {
     text-decoration: underline;
 }
