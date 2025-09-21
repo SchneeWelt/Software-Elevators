@@ -85,6 +85,11 @@ section .softwareListe .listItem img
 /* Mobilansicht: */
 @media (max-width: 768px) 
 {
+
+    /* Hier werden nur die Eigenschaften überschrieben, die hier erneut neu
+    angegeben werden. Sectino .softwareListe steht ja bereits weiter oben und
+    gibt dort viele weitere Sachen an. Diese bleiben aber wie gesagt alle 
+    erhalten. Ändern tun sich nur diese, die neu angegeben werden. */
     section .softwareListe 
     {
         flex-direction: column;
@@ -101,5 +106,11 @@ section .softwareListe .listItem img
 
         padding-top: 3vh;
         padding-bottom: 5vh;
+    }
+
+    section .softwareListe .listItem .listItemContentContainer a::before
+    {
+        content: "▶";
+        margin-right: 8px;
     }
 }
