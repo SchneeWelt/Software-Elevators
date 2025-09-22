@@ -14,13 +14,6 @@ section .linkBereich .links
     padding-top: 1em;
 }
 
-/* Für die Mobile Ansicht die Pfeile vor die Links anzeigen */
-section .linkBereich .links a::before
-{
-    content: "▶";
-    margin-right: 8px;
-}
-
 section .linkBereich .links a
 {
     font-weight: bold;
@@ -28,8 +21,9 @@ section .linkBereich .links a
     color: var(--textFarbeLink);
 }
 
-/* Der Hover Effekt funktioniert nicht auf Touch Displays... */
-.mobile_links a:hover       /* Ist diese Klasse nicht schon längst außer betrieb?
+/* Für die Mobile Ansicht die Pfeile vor die Links anzeigen */
+section .linkBereich .links a::before
 {
-    text-decoration: underline;
+    content: "▶";
+    margin-right: 8px;
 }
